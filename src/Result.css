@@ -1,0 +1,26 @@
+.results {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.result {
+  border-top: 1px dotted #c6c6c6;
+  padding: 1.5rem 0;
+}
+
+.result h1 {
+  margin-bottom: 1rem;
+}
+
+.result .distance {
+  margin-bottom: 0.5rem;
+}
+
+.result .address,
+.result .telephone
+{
+  color: #999;
+}
