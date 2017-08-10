@@ -13,9 +13,3 @@
 .search-form {
   justify-content: center;
 }
-
-.sidebar,
-.leaflet-container
-{
-  height: 700px;
-}

@@ -7,7 +7,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-leaflet": "^1.4.1",
-    "react-scripts": "1.0.11"
+    "react-scripts": "1.0.11",
+    "react-slick": "^0.14.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://davidmoodie.com/react-leaflet-store-locator"
+  "homepage": "https://davidmoodie.com/react-leaflet-store-locator"
 }

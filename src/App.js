@@ -17,14 +17,9 @@ class App extends Component {
           <button className="btn btn-primary mr-2 mb-4">Find stores</button>
           <button className="btn btn-primary mb-4">Near me</button>
         </form>
-        <div className="row">
-          <div className="col-md-4">
-            <Sidebar />
-          </div>
-          <div className="col-md-8">
-            <MyMap />
-          </div>
-        </div>
+        <button className="btn btn-secondary btn-block mb-4 hidden-sm-up">View Map</button>
+        <Sidebar />
+        <MyMap />
       </div>
     );
   }

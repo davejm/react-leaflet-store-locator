@@ -1,14 +1,18 @@
 .results {
-  margin: 0;
+  /*margin: 0;
   padding: 0;
-  list-style-type: none;
-  overflow-y: scroll;
-  height: 100%;
+  list-style-type: none;*/
+  /*overflow-y: scroll;*/
 }
 
 .result {
-  border-top: 1px dotted #c6c6c6;
-  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+}
+
+.result-inner {
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.2);
+  padding: 1.2rem;
 }
 
 .result h1 {
