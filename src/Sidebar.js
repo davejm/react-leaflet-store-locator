@@ -7,7 +7,7 @@ import Result from './Result';
 class Sidebar extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 4,

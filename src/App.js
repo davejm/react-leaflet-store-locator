@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 class App extends Component {
   render() {
     return (
-      <div className="App container-fluid">
+      <div className="App container">
         <div className="App-header">
           <h1>Store Locator</h1>
         </div>
