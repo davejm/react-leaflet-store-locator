@@ -5,9 +5,10 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 class MyMap extends Component {
   render() {
-    const center = [51.505, -0.09];
-    const zoom = 13;
+    const center = [53.7581808159536, -1.57374065678215];
+    const zoom = 10;
     const {markers} = this.props;
+
     const map = (
       <Map center={center} zoom={zoom}>
         {/* <TileLayer
@@ -18,11 +19,6 @@ class MyMap extends Component {
           url='https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         />
-        {/* <Marker position={position}>
-          <Popup>
-            <span>A pretty CSS3 popup.<br/>Easily customizable.</span>
-          </Popup>
-        </Marker> */}
         {markers.map((position, idx) =>
           <Marker key={`marker-${idx}`} position={position}>
             <Popup>

@@ -1,8 +1,8 @@
-import map from './map-reducer.js';
+import storesFound from './stores-reducer.js';
 import {combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
-  map
+  storesFound
 });
 
 export default rootReducer;

@@ -5,17 +5,19 @@ import Results from './Results';
 import MapSearch from './MapSearch';
 import MyMap from './MyMap';
 
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import * as mapActions from '../actions/map-actions';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as actions from '../actions/actions';
 
 class LocatorContainer extends Component {
   render() {
-    const {markers} = this.props;
+    const markers = this.props.storesFound.map((store) => {
+      return [parseFloat(store.Latitude), parseFloat(store.Longitude)]
+    })
 
     return (
       <div>
-        <MapSearch searchStoresByPostcode={this.props.actions.searchStoresByPostcode} />
+        <MapSearch onSearchPostcode={this.props.actions.fetchStores} />
         <button className="btn btn-secondary btn-block mb-4 hidden-sm-up">View Map</button>
         <Results />
         <MyMap markers={markers} />
@@ -25,19 +27,19 @@ class LocatorContainer extends Component {
 }
 
 LocatorContainer.propTypes = {
-  markers: PropTypes.array.isRequired,
+  storesFound: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state, props) => {
   return {
-    markers: state.map
+    storesFound: state.storesFound
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators(mapActions, dispatch)
+    actions: bindActionCreators(actions, dispatch)
   }
 }
 
