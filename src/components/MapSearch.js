@@ -4,10 +4,7 @@ import PropTypes from 'prop-types'
 
 class MapSearch extends Component {
   onSearchLocationsClick = () => {
-    this.props.setMapMarkers([
-      [51.515, -0.092],
-      [51.512, -0.0925]
-    ]);
+    this.props.searchStoresByPostcode("LS10 123");
   }
 
   render() {
@@ -23,7 +20,7 @@ class MapSearch extends Component {
 }
 
 MapSearch.propTypes = {
-  setMapMarkers: PropTypes.func.isRequired
+  searchStoresByPostcode: PropTypes.func.isRequired
 };
 
 export default MapSearch;

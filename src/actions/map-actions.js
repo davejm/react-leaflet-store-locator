@@ -1,15 +1,19 @@
 import * as types from './action-types';
 // import rp from 'request-promise';
 
-export const setMapMarkers = (markers) => {
+export const searchStoresByPostcode = (postcode) => { 
   return {
-    type: types.SET_MAP_MARKERS,
-    markers
+    type: types.SEARCH_STORES_BY_POSTCODE,
+    postcode
   };
 }
 
 // export const setMapMarkers = (markers) => {
-//   const homepage = 'https://davidmoodie.com/react-leaflet-store-locator';
+//   if (window.location.hostname === 'localhost') {
+//     const baseURL = 'http://localhost:3000'
+//   } else {
+//     const baseURL = 'https://davidmoodie.com/react-leaflet-store-locator'
+//   }
 //   const dataPath = 'data/stores-sky2.json';
 //   const options = {
 //     uri: `${homepage}/${dataPath}`,

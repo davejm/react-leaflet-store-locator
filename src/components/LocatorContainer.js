@@ -15,7 +15,7 @@ class LocatorContainer extends Component {
 
     return (
       <div>
-        <MapSearch setMapMarkers={this.props.actions.setMapMarkers} />
+        <MapSearch searchStoresByPostcode={this.props.actions.searchStoresByPostcode} />
         <button className="btn btn-secondary btn-block mb-4 hidden-sm-up">View Map</button>
         <Results />
         <MyMap markers={markers} />
