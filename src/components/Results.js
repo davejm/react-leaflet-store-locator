@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './Results.css';
 import Slider from 'react-slick';
+import PropTypes from 'prop-types';
 
 import Result from './Result';
 
-class Sidebar extends Component {
+class Results extends Component {
   render() {
     const settings = {
       dots: true,
@@ -35,16 +36,16 @@ class Sidebar extends Component {
 
     return (
       <Slider {...settings}>
-        <Result />
-        <Result />
-        <Result />
-        <Result />
-        <Result />
-        <Result />
-        <Result />
+        {this.props.resultInfos.map((resultInfo, idx) =>
+          <div key={`result-${idx}`}><Result resultInfo={resultInfo} /></div>
+        )}
       </Slider>
     );
   }
 }
 
-export default Sidebar;
+Results.propTypes = {
+  resultInfos: PropTypes.array.isRequired
+};
+
+export default Results;

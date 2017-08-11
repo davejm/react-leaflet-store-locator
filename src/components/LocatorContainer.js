@@ -9,17 +9,37 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/actions';
 
+function formatStoreType(type) {
+  switch (type) {
+    case 'DestinationStore':
+      return 'Destination Store';
+    case 'LocalSkyStore':
+      return 'Local Sky Store';
+    default:
+      // return a sane default if the type isn't recognised
+      return 'Local Sky Store';
+  }
+}
+
 class LocatorContainer extends Component {
   render() {
     const markers = this.props.storesFound.map((store) => {
       return [parseFloat(store.Latitude), parseFloat(store.Longitude)]
     })
 
+    const resultInfos = this.props.storesFound.map((store) => {
+      return Object.assign({}, store, {
+        _TypeFormatted: formatStoreType(store.Type)
+      })
+    })
+
+    console.log("resultInfos", resultInfos)
+
     return (
       <div>
         <MapSearch onSearchPostcode={this.props.actions.fetchStores} />
         <button className="btn btn-secondary btn-block mb-4 hidden-sm-up">View Map</button>
-        <Results />
+        {resultInfos.length > 0 ? <Results resultInfos={resultInfos} /> : 'No results'}
         <MyMap markers={markers} />
       </div>
     );
