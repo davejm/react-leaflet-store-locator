@@ -1,0 +1,1 @@
+export const SET_MAP_MARKERS = 'SET_MAP_MARKERS';
