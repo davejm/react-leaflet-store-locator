@@ -6,7 +6,7 @@ class MapSearch extends Component {
   onSearchLocationsClick = () => {
     this.props.setMapMarkers([
       [51.515, -0.092],
-      [52, -0.093]
+      [51.512, -0.0925]
     ]);
   }
 
