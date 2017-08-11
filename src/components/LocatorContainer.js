@@ -10,14 +10,6 @@ import {bindActionCreators} from 'redux';
 import * as mapActions from '../actions/map-actions';
 
 class LocatorContainer extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      markers: [[51.505, -0.09]]
-    };
-  }
-
   render() {
     const {markers} = this.props;
 
@@ -37,13 +29,13 @@ LocatorContainer.propTypes = {
   actions: PropTypes.object.isRequired
 };
 
-function mapStateToProps(state, props) {
+const mapStateToProps = (state, props) => {
   return {
-    markers: state.markers
+    markers: state.map
   };
 }
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return {
     actions: bindActionCreators(mapActions, dispatch)
   }
