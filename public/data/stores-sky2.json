@@ -1,0 +1,107 @@
+
+{
+  "_comment": "XML converted to JSON from API postcode=LS101QG",
+  "Success": "true",
+  "Stores": {
+    "StoreDetailsV2Entry": [
+      {
+        "Type": "DestinationStore",
+        "Experiences": {
+          "string": [
+            "Sky Go Devices",
+            "Sky Q",
+            "Ultra HD"
+          ]
+        },
+        "StoreName": "Leeds, White Rose",
+        "Address1": "White Rose Shopping Centre",
+        "Address2": "Dewsbury Road",
+        "City": "Leeds",
+        "County": null,
+        "Postcode": "LS11 8LU",
+        "Contact": null,
+        "Telephone": "0113 271 5689",
+        "Website": null,
+        "MapUrl": "http://maps.google.co.uk/maps?q=LS118LU",
+        "Latitude": "53.7581808159536",
+        "Longitude": "-1.57374065678215"
+      },
+      {
+        "Type": "LocalSkyStore",
+        "Experiences": {
+          "string": "Sky Go Devices"
+        },
+        "StoreName": "Leeds, St Johns",
+        "Address1": "St Johns Shopping Centre",
+        "Address2": "Merrion Street",
+        "City": "Leeds",
+        "County": null,
+        "Postcode": "LS2 8LQ",
+        "Contact": null,
+        "Telephone": "0113 245 0869",
+        "Website": null,
+        "MapUrl": "http://maps.google.co.uk/maps?q=LS28LQ",
+        "Latitude": "53.7994173822544",
+        "Longitude": "-1.54295389359932"
+      },
+      {
+        "Type": "LocalSkyStore",
+        "Experiences": {
+          "string": "Sky Go Devices"
+        },
+        "StoreName": "Leeds, Crossgates",
+        "Address1": "The Crossgates Centre",
+        "Address2": null,
+        "City": "Leeds",
+        "County": "West Yorkshire",
+        "Postcode": "LS15 8ET",
+        "Contact": null,
+        "Telephone": "0113 260 7298",
+        "Website": null,
+        "MapUrl": "http://maps.google.co.uk/maps?q=LS158ET",
+        "Latitude": "53.8053206773032",
+        "Longitude": "-1.45025193336605"
+      },
+      {
+        "Type": "LocalSkyStore",
+        "Experiences": {
+          "string": "Sky Go Devices"
+        },
+        "StoreName": "Castleford",
+        "Address1": "Carlton Lanes Shopping Centre",
+        "Address2": null,
+        "City": "Castleford",
+        "County": "West Yorkshire",
+        "Postcode": "WF10 1AD",
+        "Contact": null,
+        "Telephone": "01977 668653",
+        "Website": null,
+        "MapUrl": "http://maps.google.co.uk/maps?q=WF101AD",
+        "Latitude": "53.725761",
+        "Longitude": "-1.350595"
+      },
+      {
+        "Type": "DestinationStore",
+        "Experiences": {
+          "string": [
+            "Sky Go Devices",
+            "Sky Q",
+            "Ultra HD"
+          ]
+        },
+        "StoreName": "Bradford, The Broadway",
+        "Address1": "The Broadway, Bradford",
+        "Address2": "The Broadway",
+        "City": "Bradford",
+        "County": "West Yorkshire",
+        "Postcode": "BD1 1HA",
+        "Contact": null,
+        "Telephone": "01274 725833",
+        "Website": null,
+        "MapUrl": "http://maps.google.co.uk/maps?q=BD11HA",
+        "Latitude": "53.793972",
+        "Longitude": "-1.751658"
+      }
+    ]
+  }
+}
