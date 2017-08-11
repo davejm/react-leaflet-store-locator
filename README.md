@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/davejm/react-leaflet-store-locator.svg?branch=master)](https://travis-ci.org/davejm/react-leaflet-store-locator)
 
-[It's live here](https://davidmoodie.com/react-leaflet-store-locator/)
+[It's live here](https://lab.davidmoodie.com/react-leaflet-store-locator/)
 
 I started this project to learn react and redux for the re-design and re-implementation
 of Sky.com's store locator while on my placement.
