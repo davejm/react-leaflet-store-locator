@@ -15,7 +15,7 @@ class LocatorContainer extends Component {
 
     this.state = {
       markers: [[51.505, -0.09]]
-    }
+    };
   }
 
   render() {
