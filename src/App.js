@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import MyMap from './MyMap';
-import Sidebar from './Sidebar';
+import MyMap from './components/MyMap';
+import Results from './components/Results';
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
           <button className="btn btn-primary mb-4">Near me</button>
         </form>
         <button className="btn btn-secondary btn-block mb-4 hidden-sm-up">View Map</button>
-        <Sidebar />
+        <Results />
         <MyMap />
       </div>
     );

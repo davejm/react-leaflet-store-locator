@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Sidebar.css';
+import './Results.css';
 import Slider from 'react-slick';
 
 import Result from './Result';
