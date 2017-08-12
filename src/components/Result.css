@@ -3,6 +3,12 @@
   padding: 0.6rem;
 }
 
+@media (min-width: 768px) {
+  .result-wrapper {
+    margin-bottom: 0;
+  }
+}
+
 .result {
     min-height: 270px;
 }

@@ -9,17 +9,10 @@ class Results extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
         {
           breakpoint: 992,
           settings: {
