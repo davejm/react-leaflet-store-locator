@@ -5,12 +5,26 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 class MyMap extends Component {
   render() {
-    const center = [53.7581808159536, -1.57374065678215];
-    const zoom = 10;
+    const center = [54, -4];
+    const zoom = 6;
     const {markers} = this.props;
 
+    const latLngList = markers.map((marker) => {
+      return marker.position
+    })
+
+    let mapSettings = {
+      center,
+      zoom,
+      useFlyTo: true
+    }
+
+    if (latLngList.length > 0) {
+      mapSettings.bounds = latLngList;
+    }
+
     const map = (
-      <Map center={center} zoom={zoom}>
+      <Map {...mapSettings}>
         {/* <TileLayer
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -19,10 +33,10 @@ class MyMap extends Component {
           url='https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         />
-        {markers.map((position, idx) =>
-          <Marker key={`marker-${idx}`} position={position}>
+        {markers.map((marker, idx) =>
+          <Marker key={`marker-${idx}`} position={marker.position}>
             <Popup>
-              <span>A pretty CSS3 popup. <br/> Easily customizable.</span>
+              <h6>{ marker.storeName }</h6>
             </Popup>
           </Marker>
         )}
