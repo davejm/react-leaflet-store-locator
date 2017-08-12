@@ -10,5 +10,15 @@
 }
 
 .result {
-    min-height: 270px;
+  font-size: 0.9rem;
+}
+
+.result-details {
+  min-height: 170px;
+  margin-bottom: 1rem;
+}
+
+.result a {
+  display: block;
+  align-self: flex-end;
 }
