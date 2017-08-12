@@ -12,7 +12,7 @@ export const receiveStores = (postcode, json) => {
   return {
     type: types.RECEIVE_STORES,
     postcode,
-    stores: json.Stores.StoreDetailsV2Entry,
+    stores: json.stores,
     receivedAt: Date.now()
   };
 }

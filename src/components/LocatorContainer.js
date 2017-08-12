@@ -24,12 +24,12 @@ function formatStoreType(type) {
 class LocatorContainer extends Component {
   render() {
     const markers = this.props.storesFound.map((store) => {
-      return [parseFloat(store.Latitude), parseFloat(store.Longitude)]
+      return [store.latitude, store.longitude]
     })
 
     const resultInfos = this.props.storesFound.map((store) => {
       return Object.assign({}, store, {
-        _TypeFormatted: formatStoreType(store.Type)
+        _typeFormatted: formatStoreType(store.type)
       })
     })
 

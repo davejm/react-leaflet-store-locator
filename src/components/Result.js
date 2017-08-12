@@ -9,20 +9,22 @@ class Result extends Component {
       <div className="result-wrapper">
         <div className="card result">
           <div className="card-block">
-            <h4 className="card-title">{ data.StoreName }</h4>
-            <h6 className="card-subtitle mb-3 text-muted">{ data._TypeFormatted }</h6>
+            <h4 className="card-title">{ data.storeName }</h4>
+            <h6 className="card-subtitle mb-3 text-muted">{ data._typeFormatted }</h6>
             <p className="card-text">
-              { data.Address1 }<br/>
-              { data.Address2 &&
-                <span>
-                  {data.Address2}<br/>
-                </span>
+              { data.address1 }<br/>
+              { data.address2 &&
+                <span>{data.address2}<br/></span>
               }
-              { data.City }<br/>
-              { data.Postcode }<br/>
-              { data.Telephone }
+              { data.city &&
+                <span>{ data.city }<br/></span>
+              }
+              { data.postcode &&
+                <span>{ data.postcode }<br/></span>
+              }
+              { data.telephone }
             </p>
-            <a target="_blank" href={ data.MapUrl } className="card-link">Directions</a>
+            <a target="_blank" href={ data.mapUrl } className="card-link">Directions</a>
           </div>
         </div>
       </div>
