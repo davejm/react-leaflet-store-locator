@@ -25,7 +25,7 @@ export function fetchStores(postcode) {
     dispatch(requestStores(postcode));
 
     const baseURL = (window.location.hostname === 'localhost') ?
-      'http://localhost:3000':
+      `http://${window.location.host}`:
       'https://davidmoodie.com/react-leaflet-store-locator';
 
     const dataPath = 'data/stores-sky2.json';
