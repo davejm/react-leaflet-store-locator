@@ -1,6 +1,5 @@
 install:
-  - pushd
-  - cd client
+  - pushd client
   - npm install
   - popd
 
