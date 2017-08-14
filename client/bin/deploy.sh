@@ -25,6 +25,8 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 
 echo "Started deploying"
 
+cd client
+
 # Build site.
 doCompile
 
